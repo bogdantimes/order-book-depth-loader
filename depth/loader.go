@@ -146,6 +146,8 @@ func (l *CCDepthLoader) Load(pairs []Pair, startDate time.Time, endDate time.Tim
 
 	if len(pairs) == 0 {
 		pairsToLoad = defaultPairs[0:]
+	} else {
+		pairsToLoad = pairs[0:]
 	}
 
 	fileExists := false
@@ -186,6 +188,7 @@ func (l *CCDepthLoader) Load(pairs []Pair, startDate time.Time, endDate time.Tim
 	if err != nil {
 		panic(err)
 	}
+	defer file.Close()
 
 	if !fileExists {
 		// Put pairs in the file header as a comment
