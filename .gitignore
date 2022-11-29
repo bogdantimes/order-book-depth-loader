@@ -1,0 +1,6 @@
+# IDE setting
+.idea
+.vscode
+
+# Loaded data
+*_depth.csv
