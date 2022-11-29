@@ -1,6 +1,14 @@
 # order-book-depth-loader
 A tool that loads order book depth historical data for back-testing. Loads 1 minute frequency depth data provided by Crypto Chassis project.
 
+## Installation
+
+```go
+go get github.com/bogdantimes/order-book-depth-loader@latest
+```
+
+## Docs
+
 ```
 // Loader downloads the depth data from the crypto-chassis API
 //
