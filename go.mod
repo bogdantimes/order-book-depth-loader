@@ -1,4 +1,4 @@
-module order-book-depth-loader
+module github.com/bogdantimes/order-book-depth-loader
 
 go 1.19
 
