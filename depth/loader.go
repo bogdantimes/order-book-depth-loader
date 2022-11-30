@@ -316,6 +316,7 @@ func (l *CCDepthLoader) getURL(pair string, date time.Time) string {
 	if err != nil {
 		// check if error is Timeout then repeat the request after 1 second
 		if strings.Contains(string(body), "Too many requests, please try again later.") {
+			time.Sleep(time.Second)
 			return l.getURL(pair, date)
 		}
 		panic(err)
