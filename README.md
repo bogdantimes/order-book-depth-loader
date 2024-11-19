@@ -7,10 +7,6 @@ A tool that loads order book depth historical data for back-testing. Loads 1 min
 go get github.com/bogdantimes/order-book-depth-loader@latest
 ```
 
-## Hey
-
-If you fill like this project helped you, you can [support me on Patreon](https://patreon.com/bogdantimes).
-
 🫡
 
 ## Docs
